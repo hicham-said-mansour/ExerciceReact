@@ -1,0 +1,19 @@
+* {
+  margin: 0%;
+}
+a {
+  font-size: 26px;
+  text-decoration: none;
+  padding-top: 30px;
+}
+.navbarre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+  padding-top: 2%;
+}
+.container {
+  background-color: bisque;
+  height: 70vh;
+}
