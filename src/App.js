@@ -5,15 +5,25 @@ import Main from './component/Main';
 import Image from './data/photochourouktv.jpg';
 import Footer from './component/Footer';
 
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import Home from './page/Home';
+import Projets from './page/Projects';
+import Resume from './page/Resume';
+
 function App() {
   return (
-    <div>
-    
-      <Header></Header>
-      <Main></Main>
-      <Footer></Footer>
-     
-    </div>
+
+
+<Router>
+
+  <Switch>
+    <Route path="/home" component = {Home}></Route>
+    <Route path="/Projects" component = {Projets}></Route>
+    <Route path="/Resume" component = {Resume}></Route>
+
+  </Switch>
+
+ </Router>
     
       
     

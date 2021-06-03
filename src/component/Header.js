@@ -1,7 +1,7 @@
 import { findByLabelText } from '@testing-library/dom';
 import React from 'react';
 import './Header.css'
-
+import {NavLink} from 'react-router-dom';
 
 const styledHeader={
   display: "flex" ,
@@ -24,10 +24,11 @@ function Header() {
      </div>
      
       <div className="navbarre">
-          <a href="#">Home</a>
-          <a href="#">Projects</a>
-          <a href="#">resume</a>
-       
+         <NavLink to= "/home">Home</NavLink>
+         <NavLink to= "/Projects">Projects</NavLink>
+         <NavLink to= "/Resume">Resume</NavLink>
+
+             
       </div>
     
 
